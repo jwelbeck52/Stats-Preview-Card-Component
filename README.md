@@ -39,9 +39,12 @@ Users should be able to:
 
 ## Author
 Joshua Nii Okai Welbeck
+- LinkedIn - [Joshua Welbeck](https://www.linkedin.com/in/jwelbeck38)
 - Frontend Mentor - [@jwelbeck52](https://www.frontendmentor.io/profile/jwelbeck52)
 - Twitter - [@jwelbeck38](https://www.twitter.com/jwelbeck38)
 
+
+This project is licensed under MIT License
 
 
 
