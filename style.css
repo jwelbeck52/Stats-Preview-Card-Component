@@ -2,11 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
+* {
+    margin: 0;
+}
+
 .card-container{
     background: hsl(233, 47%, 7%);
     padding-top: 10vh;
     padding-bottom: 10vh;
     height: auto;
+    width: auto;
 }
 
 .card{
@@ -22,8 +27,9 @@
 
 .card-text-container {
     width:100%;
-    padding: 30px 0px 20px 0px;
+    padding: 1.8em 0px 1.5em 0px;
     min-height: auto;
+    
     
 }
 
@@ -35,9 +41,10 @@
     margin:auto;
     height: auto;
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     text-align: center;
-    row-gap: 18px;
+    row-gap: 1rem;
+    color: hsla(0, 0%, 100%, 0.75)
     
 }
 
@@ -45,14 +52,9 @@
     color: hsl(0, 0%, 100%);
     grid-column-start: span 3;
     margin: 0px;
-    font-size: 29px;
+    font-size: 1.8rem;
 }
 
-
-.card-text {
-    color: hsla(0, 0%, 100%, 0.75)
-    
-}
 
 .accent {
     color:hsl(277, 64%, 61%);
@@ -61,13 +63,13 @@
 .paragraph{
     grid-column-start: span 3;
     margin: 0px;
-    line-height: 1.7em;
+    line-height: 1.5rem;
 }
 
 .stats {
     color: hsla(0, 0%, 100%, 0.6);
     grid-column-start: span 3;
-    padding-top:10px
+    padding-top:0.5em;
 }
 
 .stats ul {
@@ -83,7 +85,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 8px;
+    margin: 0.5em;
     
     
 }
@@ -92,13 +94,13 @@
     padding: 5px;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .stats-words{
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 .card-image {
@@ -112,48 +114,61 @@
    
 }
 
-.card-image > img {
-    width:100%;
-    border-radius:10px 10px 0px 0px;
-    height: 260px;
-    opacity: 0.4;
-    object-fit: fill;
-    
-}
+
 
 /**Desktop**/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 670px){
 
     .card-container{
         width: 100%;
-        min-height: 75vh;
-        display: flex;
+        
     }
 
     .card{
         flex-direction: row;
-        width: 80%;
+        width: 90vw;
 
-        flex-wrap: nowrap;
+        
     }
 
     .card-text-container{
-        padding: 4em;
-        
+        /* padding: 4em; */
+        min-width: 10vw;
+        width:50%;
+        min-height: 40vh;
     }
 
     .card-text{
         text-align: left;
-        width: 100%;
+        /* width: 90%; */
+        min-height: 40vh;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        /* max-height: 55vh; */
+        width: 90%;
+        
     }
 
+    .card-text h1{
+        font-size: 2.5rem;
+    }
+
+    .card-text p {
+        font-size: 1.1rem;
+        line-height: 1.6rem
+    }
+
+  
     .card-image {
         border-radius:0px 10px 10px 0px;
         background: url("./images/image-header-desktop.jpg"),  hsla(277, 54%, 31%, 0.781);/**hsl(277, 38%, 35%),rgba(100, 2, 156);**/
         background-repeat: no-repeat;
         background-size:100% 100%;
-        /* background-size: contain; */
-        padding: 4em;
+        /* padding: 4em; */
+        /* min-width: 306px; */
+        min-width: 10vw;
+        width:50%;
+        min-height: 50vh;
         /* max-width: 100%;
         height: auto; */
      }
@@ -161,6 +176,25 @@
      .stats ul {
          flex-direction: row;
          justify-content:flex-start;
+         width: 100%;
      }
+
+     .stats li{
+         width: 30%;
+         text-align: left;
+     }
+
+     .stats-figures{
+        padding: 5px;
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    
+    .stats-words{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
 
 }
