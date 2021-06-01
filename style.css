@@ -129,6 +129,16 @@ body{
    
 }
 
+@media screen and (min-width: 500px){
+    .stats ul {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+}
+
+
+}
+
 
 
 /**at min:width of 768px**/
