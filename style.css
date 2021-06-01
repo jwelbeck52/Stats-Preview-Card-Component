@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+body{
+    background: hsl(233, 47%, 7%);
+}
+
 .card-container{
     background: hsl(233, 47%, 7%);
     padding-top: 10vh;
