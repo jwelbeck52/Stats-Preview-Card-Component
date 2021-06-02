@@ -25,7 +25,7 @@ body{
     background: hsl(233, 47%, 7%);
     padding-top: 10vh;
     padding-bottom: 5vh;
-    height: auto;
+    /* height: auto; */
     width: auto;
 }
 
@@ -43,7 +43,7 @@ body{
 .card-text-container {
     width:100%;
     padding: 1.8em 0px 1.5em 0px;
-    min-height: auto;
+    /* min-height: auto; */
     
     
 }
@@ -54,7 +54,7 @@ body{
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     margin:auto;
-    height: auto;
+    /* height: auto; */
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     text-align: center;
@@ -146,7 +146,7 @@ body{
 
     .card-container{
         width: 100%;
-        height: auto;
+        /* height: auto; */
         display: flex;
         padding-top: 10vh;
         padding-bottom: 5vh;
